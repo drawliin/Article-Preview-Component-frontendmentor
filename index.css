@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Manrope";
+    color: hsl(217, 19%, 35%);
+    background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+    max-width: 900px;
+    display: flex;
+    gap: 1rem;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.container > img:nth-child(1) {
+    width: 40%;
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+}
+
+.container .content > *{
+    padding: 1rem 2rem;
+}
+
+.content p {
+    font-weight: 500;
+    color: hsl(214, 17%, 51%);
+}
+
+.div-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.div-footer .infos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.infos img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.infos>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infos>div span:nth-child(1) {
+    font-weight: 700;
+}
+
+.infos>div span:nth-child(2) {
+    color: hsl(212, 23%, 69%)
+}
+
+.share-button {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: #EEF1F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.share{
+    position: absolute;
+    top: -50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    color: hsl(212, 23%, 69%);
+    background-color: hsl(217, 19%, 35%);
+}
+.share span{
+    letter-spacing: 3px;
+}
+
+
+@media(max-width: 900px) {
+    .container {
+        max-width: 450px;
+        flex-direction: column;
+    }
+
+    .container > img:nth-child(1) {
+        width: auto;
+        border-radius: 10px 10px 0 0;
+    }
+}
