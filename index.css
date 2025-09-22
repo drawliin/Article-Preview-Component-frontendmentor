@@ -102,6 +102,17 @@ body {
     border-radius: 15px;
     color: hsl(212, 23%, 69%);
     background-color: hsl(217, 19%, 35%);
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid hsl(217, 19%, 35%);
+    }
 }
 
 .share span {
