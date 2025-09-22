@@ -120,8 +120,6 @@ body {
 }
 
 
-
-
 @media(max-width: 1030px) {
     .container {
         max-width: 450px;
@@ -140,6 +138,11 @@ body {
         transform: none;
         padding: 0;
         gap: 20px;
+
+        &::after {
+            
+            display: none;
+        }
     }
 
     .footer-color {
